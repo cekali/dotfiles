@@ -15,6 +15,7 @@ function timestamp() {
 }
 
 alias lazy_wiki='lazygit timestamp'
+alias lazy_dot='lazygit timestamp'
 
 alias nectar='mvn clean deploy -DskipTests'
 
