@@ -1,1 +1,9 @@
 alias test='echo hello'
+
+alias git_find='find ~/ -name .git -type d -exec dirname {} \;'
+
+function lazygit() {
+    git add .
+    git commit -a -m "$1"
+    git push
+}
