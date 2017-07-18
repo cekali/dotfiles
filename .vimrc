@@ -122,6 +122,11 @@ set expandtab
 "required for vimwiki
 syntax on
 
+"for solarized"
+syntax enable
+set background=dark
+colorscheme solarized
+
 "pathogen
 execute pathogen#infect()
 
