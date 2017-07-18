@@ -2,6 +2,9 @@
 " most setttings taken from:
 " https://github.com/colbycheeze/dotfiles/blob/master/vimrc
 
+
+execute pathogen#infect()
+
 " use vim settings
 set nocompatible
 
@@ -125,10 +128,12 @@ syntax on
 "for solarized"
 syntax enable
 set background=dark
-colorscheme solarized
+se t_Co=16
+let g:solarized_termcolors=256 
+"colorscheme solarized
 
 "pathogen
-execute pathogen#infect()
+"execute pathogen#infect()
 
 "auto reload vimrc when changes are made
 augroup myvimrc
