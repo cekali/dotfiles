@@ -3,6 +3,7 @@ alias test='echo hello'
 alias git_find='find ~/ -name .git -type d -exec dirname {} \;'
 alias bash_reload='source ~/.bash_profile'
 alias wiki='vi ~/vimwiki/index.wiki'
+alias diary='vi ~/vimwiki/diary/diary.wiki'
 
 function lazygit() {
     git add .
@@ -21,7 +22,9 @@ alias nectar='mvn clean deploy -DskipTests'
 
 alias nectar_test='mvn clean deploy'
 
-
+function lint() {
+    esw --watch --clear "$1"
+}
 
 # temporary for docker stuff
 alias docker_down='docker-compose -f .container/local-sandbox/docker-compose-multple-nectar.yml down'
