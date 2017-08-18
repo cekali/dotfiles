@@ -15,15 +15,15 @@ function timestamp() {
     date
 }
 
-alias lazy_wiki='lazygit $(timestamp)'
-alias lazy_dot='lazygit $(timestamp)'
+alias lazy_wiki='lazygit "$(timestamp)"'
+alias lazy_dot='lazygit "$(timestamp)"'
 
 function one() {
     echo "$1"
 }
 
 function two() {
-    one $(timestamp)
+    one "$(timestamp)"
 }
 
 alias three='echo $(timestamp)'
