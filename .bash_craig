@@ -26,3 +26,5 @@ alias nectar_test='mvn clean deploy'
 # temporary for docker stuff
 alias docker_down='docker-compose -f .container/local-sandbox/docker-compose-multple-nectar.yml down'
 alias docker_up='docker-compose -f .container/local-sandbox/docker-compose-multple-nectar.yml up'
+
+export PATH=$PATH:./node_modules/.bin
