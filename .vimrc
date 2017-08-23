@@ -157,4 +157,4 @@ augroup END
 "endfunction"
 ":autocmd FileType vimwiki map c :call ToggleCalendar()"
 
-so .neocomplete
+"so ~/dotfiles/.neocomplete
