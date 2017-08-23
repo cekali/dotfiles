@@ -156,3 +156,5 @@ augroup END
 "  end"
 "endfunction"
 ":autocmd FileType vimwiki map c :call ToggleCalendar()"
+
+so .neocomplete
