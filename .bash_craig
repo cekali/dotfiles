@@ -1,4 +1,8 @@
+alias ll='ls -laG'
+
 alias test='echo hello'
+
+alias vi='vim'
 
 alias git_find='find ~/ -name .git -type d -exec dirname {} \;'
 alias bash_reload='source ~/.bash_profile'
@@ -15,7 +19,7 @@ function timestamp() {
     date
 }
 
-alias lazy_wiki='lazygit "$(timestamp)"'
+alias lazy_wiki='(cd ~/vimwiki; lazygit "$(timestamp)")'
 alias lazy_dot='lazygit "$(timestamp)"'
 
 function one() {
@@ -41,3 +45,9 @@ alias docker_down='docker-compose -f .container/local-sandbox/docker-compose-mul
 alias docker_up='docker-compose -f .container/local-sandbox/docker-compose-multple-nectar.yml up'
 
 export PATH=$PATH:./node_modules/.bin
+
+export CLICOLOR=1
+export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
+HISTFILESIZE=10000
+
+test -f ~/.git-completion.bash && . $_
