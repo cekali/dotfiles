@@ -50,4 +50,4 @@ export CLICOLOR=1
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 HISTFILESIZE=10000
 
-test -f ~/.git-completion.bash && . $_
+test -f ~/dotfiles/.git-completion.bash && . $_
