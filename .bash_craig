@@ -50,9 +50,8 @@ export CLICOLOR=1
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 HISTFILESIZE=10000
 
-test -f ~/dotfiles/.git-completion.bash && . $_
-
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source ${DIR}/.bash_local
-echo ${DIR}
+
+test -f ${DIR}/.git-completion.bash && . $_
 
