@@ -1,7 +1,5 @@
 alias ll='ls -laG'
 
-alias test='echo hello'
-
 alias vi='vim'
 
 alias git_find='find ~/ -name .git -type d -exec dirname {} \;'
@@ -21,16 +19,6 @@ function timestamp() {
 
 alias lazy_wiki='(cd ~/vimwiki; lazygit "$(timestamp)")'
 alias lazy_dot='lazygit "$(timestamp)"'
-
-function one() {
-    echo "$1"
-}
-
-function two() {
-    one "$(timestamp)"
-}
-
-alias three='echo $(timestamp)'
 
 alias nectar='mvn clean deploy -DskipTests'
 
