@@ -157,7 +157,7 @@ augroup END
 "endfunction"
 ":autocmd FileType vimwiki map c :call ToggleCalendar()"
 
-so ~/dotfiles/.neocomplete
+so ~/projects/dotfiles/.neocomplete
 
 set backspace=indent,eol,start
 

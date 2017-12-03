@@ -1,7 +1,7 @@
 alias ll='ls -laG'
 
-alias test='echo hello'
-
+#alias test='echo hello'
+alias vim='/usr/local/Cellar/vim/8.0.1150/bin/vim'
 alias vi='vim'
 
 alias git_find='find ~/ -name .git -type d -exec dirname {} \;'
@@ -46,11 +46,13 @@ alias docker_up='docker-compose -f .container/local-sandbox/docker-compose-multp
 
 export PATH=$PATH:./node_modules/.bin
 
+export PATH=$PATH:/Users/craigkalick/maven/apache-maven-3.5.2/bin
+
 export CLICOLOR=1
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 HISTFILESIZE=10000
 
-test -f ~/dotfiles/.git-completion.bash && . $_
+test -f ~/projects/dotfiles/.git-completion.bash && . $_
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source ${DIR}/.bash_local
