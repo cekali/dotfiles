@@ -1,4 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/Users/craigkalick/projects/dotfiles/.vim'
 let g:netrw_dirhist_2='/Users/craigkalick/projects/dotfiles'
+let g:netrw_dirhist_3='/Users/ckalick/dotfiles/.vim/bundle/neocomplete.vim/.git'
+let g:netrw_dirhist_4='/Users/ckalick/dotfiles/.vim/bundle/neocomplete.vim/.git/refs'
+let g:netrw_dirhist_5='/Users/ckalick/projects/temp/META-INF/maven'

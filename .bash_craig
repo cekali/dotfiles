@@ -1,7 +1,7 @@
 alias ll='ls -laG'
 
 #alias test='echo hello'
-alias vim='/usr/local/Cellar/vim/8.0.1150/bin/vim'
+alias vim='/usr/local/Cellar/vim/8.0.1350/bin/vim'
 alias vi='vim'
 
 alias git_find='find ~/ -name .git -type d -exec dirname {} \;'
@@ -21,16 +21,6 @@ function timestamp() {
 
 alias lazy_wiki='(cd ~/vimwiki; lazygit "$(timestamp)")'
 alias lazy_dot='lazygit "$(timestamp)"'
-
-function one() {
-    echo "$1"
-}
-
-function two() {
-    one "$(timestamp)"
-}
-
-alias three='echo $(timestamp)'
 
 alias nectar='mvn clean deploy -DskipTests'
 
@@ -52,9 +42,8 @@ export CLICOLOR=1
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
 HISTFILESIZE=10000
 
-test -f ~/projects/dotfiles/.git-completion.bash && . $_
-
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source ${DIR}/.bash_local
-echo ${DIR}
+
+test -f ${DIR}/.git-completion.bash && . $_
 
