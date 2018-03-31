@@ -3,9 +3,12 @@ alias ll='ls -laG'
 #alias test='echo hello'
 alias vim='/usr/local/Cellar/vim/8.0.1350/bin/vim'
 alias vi='vim'
+alias gs='git status'
+alias gl='git lg'
 
 alias git_find='find ~/ -name .git -type d -exec dirname {} \;'
 alias bash_reload='source ~/.bash_profile'
+alias reload='bash_reload'
 alias wiki='vi ~/vimwiki/index.wiki'
 alias diary='vi ~/vimwiki/diary/diary.wiki'
 
