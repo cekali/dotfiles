@@ -12,6 +12,8 @@ alias reload='bash_reload'
 alias wiki='vi ~/vimwiki/index.wiki'
 alias diary='vi ~/vimwiki/diary/diary.wiki'
 
+alias stage='heroku pg:psql postgresql-spherical-49607 --app cvm-api-stage'
+
 function lazygit() {
     git add .
     git commit -a -m "$1"
