@@ -1,7 +1,7 @@
 alias ll='ls -laG'
 
 #alias test='echo hello'
-alias vim='/usr/local/Cellar/vim/8.0.1350/bin/vim'
+alias vim='/usr/local/Cellar/vim/8.1.1500/bin/vim'
 alias vi='vim'
 alias gs='git status'
 alias gl='git lg'
@@ -52,3 +52,10 @@ source ${DIR}/.bash_local
 
 test -f ${DIR}/.git-completion.bash && . $_
 
+# Add Visual Studio Code (code)
+export PATH=$PATH:/Applications/VisualStudioCode.app/Contents/Resources/app/bin
+
+export PATH=$PATH:~/Library/Python/3.7/bin
+export PATH=$PATH:/Users/craigkalick/projects/terragrunt
+
+alias qgis='/usr/local/opt/osgeo-qgis/bin/osgeo-qgis'
