@@ -2,6 +2,7 @@
 
 Add to ~/.gitconfig
 [alias]
+
     lg = !"git lg1"
     lg1 = !"git lg1-specific --all"
     lg2 = !"git lg2-specific --all"
