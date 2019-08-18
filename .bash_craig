@@ -1,7 +1,6 @@
-alias ll='ls -laG'
-
+alias ll='ls -laG' 
 #alias test='echo hello'
-alias vim='/usr/local/Cellar/vim/8.1.1500/bin/vim'
+#alias vim='/usr/local/Cellar/vim/8.1.1500/bin/vim'
 alias vi='vim'
 alias gs='git status'
 alias gl='git lg'
@@ -9,10 +8,8 @@ alias gl='git lg'
 alias git_find='find ~/ -name .git -type d -exec dirname {} \;'
 alias bash_reload='source ~/.bash_profile'
 alias reload='bash_reload'
-alias wiki='vi ~/vimwiki/index.wiki'
-alias diary='vi ~/vimwiki/diary/diary.wiki'
-
-alias stage='heroku pg:psql postgresql-spherical-49607 --app cvm-api-stage'
+#alias wiki='vi ~/vimwiki/index.wiki'
+#alias diary='vi ~/vimwiki/diary/diary.wiki'
 
 function lazygit() {
     git add .
@@ -24,24 +21,12 @@ function timestamp() {
     date
 }
 
-alias lazy_wiki='(cd ~/vimwiki; lazygit "$(timestamp)")'
-alias lazy_dot='lazygit "$(timestamp)"'
-
-alias nectar='mvn clean deploy -DskipTests'
-
-alias nectar_test='mvn clean deploy'
+#alias lazy_wiki='(cd ~/vimwiki; lazygit "$(timestamp)")'
+#alias lazy_dot='lazygit "$(timestamp)"'
 
 function lint() {
     esw --watch --clear "$1"
 }
-
-# temporary for docker stuff
-alias docker_down='docker-compose -f .container/local-sandbox/docker-compose-multple-nectar.yml down'
-alias docker_up='docker-compose -f .container/local-sandbox/docker-compose-multple-nectar.yml up'
-
-export PATH=$PATH:./node_modules/.bin
-
-export PATH=$PATH:/Users/craigkalick/maven/apache-maven-3.5.2/bin
 
 export CLICOLOR=1
 export LSCOLORS="ExGxBxDxCxEgEdxbxgxcxd"
@@ -55,7 +40,7 @@ test -f ${DIR}/.git-completion.bash && . $_
 # Add Visual Studio Code (code)
 export PATH=$PATH:/Applications/VisualStudioCode.app/Contents/Resources/app/bin
 
-export PATH=$PATH:~/Library/Python/3.7/bin
 export PATH=$PATH:/Users/craigkalick/projects/terragrunt
 
-alias qgis='/usr/local/opt/osgeo-qgis/bin/osgeo-qgis'
+# Start Qgis from Command Line
+alias qgis='/usr/local/opt/osgeo-qgis/QGIS.app'
